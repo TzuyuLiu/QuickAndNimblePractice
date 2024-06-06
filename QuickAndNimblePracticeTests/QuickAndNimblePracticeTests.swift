@@ -27,7 +27,7 @@ final class QuickAndNimblePracticeTests: QuickSpec {
 
             context("when view is loaded") {
                 it("should have 8 moveis loaded") {
-                    expect(subject.tableView.numberOfRows(inSection: 0)).to(equal(0))
+                    expect(subject.tableView.numberOfRows(inSection: 0)).to(equal(8))
                 }
             }
         }
