@@ -19,6 +19,11 @@ class MoviesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "MovieCell")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell")!
+        let movie = MoviesDataHelper.getMovies()[indexPath.row]
+        cell.textLabel?.text = movie.title
+        cell.detailTextLabel?.text = movie.genreString()
+        
+        return cell
     }
 }

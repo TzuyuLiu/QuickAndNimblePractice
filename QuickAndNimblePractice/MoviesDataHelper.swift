@@ -16,6 +16,17 @@ enum Genre: Int {
 struct Movie {
     var title: String
     var genre: Genre
+
+    func genreString() -> String {
+        switch genre {
+        case .Animation:
+            return "Animation"
+        case .Action:
+            return "Action"
+        default:
+            return "None"
+        }
+    }
 }
 
 class MoviesDataHelper {
