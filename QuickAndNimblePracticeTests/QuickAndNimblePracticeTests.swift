@@ -30,6 +30,19 @@ final class QuickAndNimblePracticeTests: QuickSpec {
                     expect(subject.tableView.numberOfRows(inSection: 0)).to(equal(8))
                 }
             }
+
+            context("Table view") {
+                var cell: UITableViewCell!
+
+                beforeEach {
+                    cell = subject.tableView(subject.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
+                }
+
+                it("should show movie title and genre") {
+                    expect(cell.textLabel?.text).to(equal("The Emoji Movie"))
+                    expect(cell.detailTextLabel?.text).to(equal("Animation"))
+                }
+            }
         }
     }
 
