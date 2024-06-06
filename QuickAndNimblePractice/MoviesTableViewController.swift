@@ -9,18 +9,22 @@ import UIKit
 
 class MoviesTableViewController: UITableViewController {
 
+    var movies: [Movie] {
+        MoviesDataHelper.getMovies()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        MoviesDataHelper.getMovies().count
+        movies.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell")!
-        let movie = MoviesDataHelper.getMovies()[indexPath.row]
+        let movie = movies[indexPath.row]
         cell.textLabel?.text = movie.title
         cell.detailTextLabel?.text = movie.genreString()
         
