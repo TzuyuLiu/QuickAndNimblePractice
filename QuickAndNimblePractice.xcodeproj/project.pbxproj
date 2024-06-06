@@ -215,6 +215,9 @@
 				Base,
 			);
 			mainGroup = 647864A12C1160F700758CE5;
+			packageReferences = (
+				647864DD2C1164A700758CE5 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 647864AB2C1160F700758CE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +610,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		647864DD2C1164A700758CE5 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 647864A22C1160F700758CE5 /* Project object */;
 }
