@@ -16,6 +16,7 @@
 		647864C52C1160F800758CE5 /* QuickAndNimblePracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647864C42C1160F800758CE5 /* QuickAndNimblePracticeTests.swift */; };
 		647864CF2C1160F800758CE5 /* QuickAndNimblePracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647864CE2C1160F800758CE5 /* QuickAndNimblePracticeUITests.swift */; };
 		647864D12C1160F800758CE5 /* QuickAndNimblePracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647864D02C1160F800758CE5 /* QuickAndNimblePracticeUITestsLaunchTests.swift */; };
+		647864E02C117D2F00758CE5 /* MoviesDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647864DF2C117D2F00758CE5 /* MoviesDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		647864CA2C1160F800758CE5 /* QuickAndNimblePracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickAndNimblePracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		647864CE2C1160F800758CE5 /* QuickAndNimblePracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAndNimblePracticeUITests.swift; sourceTree = "<group>"; };
 		647864D02C1160F800758CE5 /* QuickAndNimblePracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAndNimblePracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		647864DF2C117D2F00758CE5 /* MoviesDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				647864B62C1160F800758CE5 /* Assets.xcassets */,
 				647864B82C1160F800758CE5 /* LaunchScreen.storyboard */,
 				647864BB2C1160F800758CE5 /* Info.plist */,
+				647864DF2C117D2F00758CE5 /* MoviesDataHelper.swift */,
 			);
 			path = QuickAndNimblePractice;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				647864B22C1160F700758CE5 /* ViewController.swift in Sources */,
 				647864AE2C1160F700758CE5 /* AppDelegate.swift in Sources */,
+				647864E02C117D2F00758CE5 /* MoviesDataHelper.swift in Sources */,
 				647864B02C1160F700758CE5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
