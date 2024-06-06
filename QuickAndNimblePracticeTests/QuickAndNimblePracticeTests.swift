@@ -5,31 +5,31 @@
 //  Created by 劉子瑜-20001220 on 2024/6/6.
 //
 
-import XCTest
+import Quick
+import Nimble
+
 @testable import QuickAndNimblePractice
+import UIKit
 
-final class QuickAndNimblePracticeTests: XCTestCase {
+final class QuickAndNimblePracticeTests: QuickSpec {
+    override class func spec() {
+        var subject: MoviesTableViewController!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+        // 開始測試案例
+        describe("MovieTableViewControllerSpec") {
+            // 在 MovieTableViewController 內的每個測試開始前運行
+            beforeEach {
+                subject = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MoviesTableViewController") as? MoviesTableViewController
+                
+                // 調用 viewdidload
+                _ = subject.view
+            }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+            context("when view is loaded") {
+                it("should have 8 moveis loaded") {
+                    expect(subject.tableView.numberOfRows(inSection: 0)).to(equal(0))
+                }
+            }
         }
     }
 
